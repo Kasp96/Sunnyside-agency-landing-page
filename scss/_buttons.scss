@@ -1,0 +1,65 @@
+.button {
+	width: 135px;
+	padding: 15px;
+	border: none;
+	border-radius: 25px;
+	font-size: var(--fs-300);
+	text-transform: uppercase;
+	font-family: var(--ff-secondary);
+	font-weight: var(--fw-xl);
+	background: var(--clr-yellow-400);
+	transition: all 0.3s;
+}
+.button:hover {
+	background-color: hsl(199, 99%, 71%);
+	color: var(--clr-white);
+}
+
+.burger-box {
+	padding: 0.75rem 0;
+	cursor: pointer;
+
+	.burger-btn,
+	.burger-btn::before,
+	.burger-btn::after {
+		background-color: var(--clr-white);
+		width: 30px;
+		height: 3px;
+		transition: all 0.4s;
+	}
+
+	.burger-btn {
+		position: relative;
+	}
+
+	.burger-btn::before {
+		position: absolute;
+		content: '';
+		top: 10px;
+	}
+	.burger-btn::after {
+		position: absolute;
+		content: '';
+		bottom: 10px;
+	}
+}
+
+.burger-box.active .burger-btn::after {
+	transform: rotateZ(45deg) translate(7px, 7px);
+}
+.burger-box.active .burger-btn::before {
+	transform: rotateZ(135deg) translate(-7px, 7px);
+}
+
+.burger-box.active .burger-btn {
+	background-color: transparent;
+}
+
+@media (min-width: 48rem) {
+	.button {
+		background: var(--clr-white);
+	}
+	.burger-box {
+		display: none;
+	}
+}

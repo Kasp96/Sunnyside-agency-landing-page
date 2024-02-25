@@ -4,4 +4,86 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	list-style: none;
+}
+
+:root {
+	--clr-yellow-400: hsl(51, 100%, 49%);
+	--clr-red-400: hsl(7, 99%, 70%);
+	--clr-blue-800: hsl(198, 62%, 26%);
+	--clr-green-500: hsl(168, 34%, 41%);
+	--clr-green-800: hsl(167, 40%, 24%);
+	--clr-gray-800: hsl(212, 27%, 19%);
+	--clr-gray-600: hsl(213, 9%, 39%);
+	--clr-gray-400: hsl(232, 10%, 55%);
+	--clr-gray-300: hsl(210, 4%, 67%);
+	--clr-white: hsl(0, 0%, 100%);
+
+	--ff-primary: 'Barlow', sans-serif;
+	--ff-secondary: 'Fraunces', serif;
+
+	--fs-300: 1rem;
+	--fs-350: 1.05rem;
+	--fs-400: 1.125rem;
+	--fs-500: 1.25rem;
+	--fs-600: 1.375rem;
+	--fs-700: 1.5rem;
+	--fs-800: 1.375rem;
+
+	--fw-s: 400;
+	--fw-m: 500;
+	--fw-l: 600;
+	--fw-xl: 700;
+	--fw-2xl: 800;
+	--fw-3xl: 900;
+
+	--16px: 1rem;
+	--18px: 1.125rem;
+	--20px: 1.25rem;
+	--22px: 1.375rem;
+	--24px: 1.5rem;
+	--26px: 1.625rem;
+	--28px: 1.75rem;
+	--30px: 1.875rem;
+	--32px: 2rem;
+	--34px: 1rem;
+	--36px: 1rem;
+	--38px: 1rem;
+	--40px: 1rem;
+	--42px: 1rem;
+	--44px: 1rem;
+	--46px: 1rem;
+	--48px: 1rem;
+
+	--gap-s: 1.5rem;
+	--gap-m: 2rem;
+	--gap-l: 2.5rem;
+	--gap-xl: 3rem;
+	--gap-2xl: 3.5rem;
+
+	// zmienic zmienne gap na 20px 22px 24px 26px itd i uzywac tego
+
+	--space-xs: 0.5rem;
+	--space-s: 1rem;
+	--space-m: 1.5rem;
+	--space-l: 2rem;
+	--space-xl: 3rem;
+}
+
+img,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	font-family: 'Barlow', sans-serif;
+	font-family: 'Fraunces', serif;
+}
+button {
+	cursor: pointer;
 }
