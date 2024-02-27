@@ -1,11 +1,8 @@
 .button {
 	width: 135px;
 	padding: 15px;
-	border: none;
 	border-radius: 25px;
-	font-size: var(--fs-300);
-	text-transform: uppercase;
-	font-family: var(--ff-secondary);
+	font-size: var(--16px);
 	font-weight: var(--fw-xl);
 	background: var(--clr-yellow-400);
 	transition: all 0.3s;
@@ -13,6 +10,28 @@
 .button:hover {
 	background-color: hsl(199, 99%, 71%);
 	color: var(--clr-white);
+}
+.button-reverse {
+	position: relative;
+	font-size: var(--16px);
+	font-weight: var(--fw-3xl);
+	background: none;
+}
+.button-reverse::before {
+	position: absolute;
+	content: '';
+	bottom: -2px;
+	left: -5px;
+	border-radius: 5px;
+	width: 110%;
+	height: 8px;
+	z-index: -9999;
+}
+.yellow::before {
+	background-color: hsla(51, 100%, 49%, 0.315);
+}
+.pink::before {
+	background-color: hsla(7, 99%, 70%, 0.277);
 }
 
 .burger-box {
