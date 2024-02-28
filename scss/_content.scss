@@ -69,6 +69,51 @@
 		color: var(--clr-blue-800);
 	}
 }
+.testimonials-box {
+	padding-top: var(--56px);
+	text-align: center;
+
+	h2 {
+		font-size: var(--16px);
+		font-weight: var(--fw-2xl);
+		color: var(--clr-gray-300);
+		text-transform: uppercase;
+		letter-spacing: 4px;
+	}
+
+	.clients-box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-inline: var(--24px);
+
+		img {
+			width: var(--68px);
+			margin-top: var(--64px);
+			margin-inline: auto;
+			border-radius: 50%;
+		}
+		.quote {
+			padding-block: var(--32px);
+			font-size: var(--18px);
+			font-family: var(--ff-primary);
+			font-weight: var(--fw-l);
+			color: var(--clr-gray-600);
+			line-height: var(--32px);
+		}
+		.quote-author {
+			font-size: var(--18px);
+			font-weight: var(--fw-3xl);
+		}
+		.role {
+			margin-top: var(--16px);
+			font-family: var(--ff-primary);
+			font-weight: var(--fw-l);
+			color: var(--clr-gray-300);
+		}
+	}
+}
 
 @media (min-width: 48rem) {
 	.cards-box {
@@ -83,7 +128,6 @@
 			align-items: flex-start;
 			text-align: left;
 			height: 575px;
-
 			padding-left: 2rem;
 			padding-right: 4rem;
 
@@ -106,15 +150,12 @@
 		}
 		.cherry,
 		.orange {
+			justify-content: flex-start;
+			align-items: center;
 			text-align: center;
-
-			.card-heading-sm {
-				place-self: center;
-			}
-			.card-text-sm {
-				place-self: center;
-				max-width: 335px;
-			}
+			padding-top: 25rem;
+			padding-left: var(--32px);
+			padding-right: var(--32px);
 		}
 
 		.cherry {
@@ -122,6 +163,39 @@
 		}
 		.orange {
 			background-image: url('/images/desktop/image-photography.jpg');
+		}
+	}
+	.testimonials-box {
+		padding-top: var(--160px);
+		max-width: 85%;
+		margin: 0 auto;
+
+		h2 {
+			font-size: var(--20px);
+		}
+		.clients-box {
+			flex-direction: row;
+			align-items: flex-start;
+			gap: var(--32px);
+
+			.client {
+				max-height: 30rem;
+				img {
+					margin-top: var(--80px);
+				}
+				.quote {
+					padding-block: var(--60px);
+					font-size: var(--18px);
+					border: 2px solid pur;
+				}
+
+				.quote-author {
+					font-size: var(--16px);
+				}
+				.role {
+					font-size: var(--14px);
+				}
+			}
 		}
 	}
 }
