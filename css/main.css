@@ -109,6 +109,15 @@
   color: var(--clr-gray-300);
 }
 
+.images-box {
+  padding-top: var(--80px);
+  display: flex;
+  flex-wrap: wrap;
+}
+.images-box picture {
+  flex: 0 0 50%;
+}
+
 @media (min-width: 48rem) {
   .cards-box {
     flex-direction: row;
@@ -156,7 +165,7 @@
     background-image: url("/images/desktop/image-photography.jpg");
   }
   .testimonials-box {
-    padding-top: var(--160px);
+    padding-top: var(--section-padding);
     max-width: 85%;
     margin: 0 auto;
   }
@@ -177,13 +186,20 @@
   .testimonials-box .clients-box .client .quote {
     padding-block: var(--60px);
     font-size: var(--18px);
-    border: 2px solid pur;
   }
   .testimonials-box .clients-box .client .quote-author {
     font-size: var(--16px);
   }
   .testimonials-box .clients-box .client .role {
     font-size: var(--14px);
+  }
+  .images-box {
+    padding-top: var(--section-padding);
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .images-box picture {
+    flex: 0 0 25%;
   }
 }
 @media (min-width: 75rem) {
@@ -277,6 +293,41 @@
   background-color: transparent;
 }
 
+.car-btn {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  padding: 0.5rem 0.8rem;
+  font-size: var(--32px);
+  background-color: rgba(0, 0, 0, 0.2);
+  color: var(--clr-white);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.car-btn:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.btn-left {
+  left: 0;
+}
+
+.btn-right {
+  right: 0;
+}
+
+.car-btn span {
+  display: block;
+  transition: transform 0.3s;
+}
+
+.car-btn:hover span {
+  transform: scale(0.7);
+}
+
 @media (min-width: 48rem) {
   .button {
     background: var(--clr-white);
@@ -348,7 +399,7 @@
   --96px: 6rem;
   --112px: 7rem;
   --128px: 8rem;
-  --160px: 10rem;
+  --section-padding: 10rem;
 }
 
 img,

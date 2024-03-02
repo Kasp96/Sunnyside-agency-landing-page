@@ -114,7 +114,15 @@
 		}
 	}
 }
+.images-box {
+	padding-top: var(--80px);
+	display: flex;
+	flex-wrap: wrap;
 
+	picture {
+		flex: 0 0 50%;
+	}
+}
 @media (min-width: 48rem) {
 	.cards-box {
 		flex-direction: row;
@@ -166,7 +174,7 @@
 		}
 	}
 	.testimonials-box {
-		padding-top: var(--160px);
+		padding-top: var(--section-padding);
 		max-width: 85%;
 		margin: 0 auto;
 
@@ -186,7 +194,6 @@
 				.quote {
 					padding-block: var(--60px);
 					font-size: var(--18px);
-					border: 2px solid pur;
 				}
 
 				.quote-author {
@@ -196,6 +203,15 @@
 					font-size: var(--14px);
 				}
 			}
+		}
+	}
+	.images-box {
+		padding-top: var(--section-padding);
+		display: flex;
+		flex-wrap: nowrap;
+
+		picture {
+			flex: 0 0 25%;
 		}
 	}
 }
