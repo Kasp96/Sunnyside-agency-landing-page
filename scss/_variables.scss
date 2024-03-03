@@ -29,8 +29,7 @@
 	--fw-2xl: 800;
 	--fw-3xl: 900;
 
-
-	--12px:0.75rem
+	--12px: 0.75rem;
 	--14px: 0.875rem;
 	--16px: 1rem;
 	--18px: 1.125rem;
@@ -66,6 +65,8 @@
 	--112px: 7rem;
 	--128px: 8rem;
 	--section-padding: 10rem;
+
+	overflow-x: hidden;
 }
 
 img,
@@ -82,12 +83,10 @@ body {
 	font-family: 'Barlow', sans-serif;
 	font-family: 'Fraunces', serif;
 	overflow-x: hidden;
-	
 }
 button {
 	cursor: pointer;
 	text-transform: uppercase;
 	border: none;
 	font-family: var(--ff-secondary);
-	
 }
