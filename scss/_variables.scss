@@ -81,6 +81,7 @@ a {
 body {
 	font-family: 'Barlow', sans-serif;
 	font-family: 'Fraunces', serif;
+	overflow-x: hidden;
 	
 }
 button {
@@ -88,4 +89,5 @@ button {
 	text-transform: uppercase;
 	border: none;
 	font-family: var(--ff-secondary);
+	
 }

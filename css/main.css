@@ -42,11 +42,11 @@
   min-height: 315px;
 }
 .cards-box .egg {
-  background-image: url("/images/mobile/image-transform.jpg");
+  background-image: url("../images/mobile/image-transform.jpg");
   order: -1;
 }
 .cards-box .glass {
-  background-image: url("/images/mobile/image-stand-out.jpg");
+  background-image: url("../images/mobile/image-stand-out.jpg");
 }
 .cards-box .cherry,
 .cards-box .orange {
@@ -56,12 +56,12 @@
   padding-inline: var(--16px);
 }
 .cards-box .cherry {
-  background-image: url("/images/mobile/image-graphic-design.jpg");
+  background-image: url("../images/mobile/image-graphic-design.jpg");
   min-height: 600px;
   color: var(--clr-green-800);
 }
 .cards-box .orange {
-  background-image: url("/images/mobile/image-photography.jpg");
+  background-image: url("../images/mobile/image-photography.jpg");
   min-height: 600px;
   color: var(--clr-blue-800);
 }
@@ -188,11 +188,11 @@
     line-height: var(--30px);
   }
   .cards-box .egg {
-    background-image: url("/images/desktop/image-transform.jpg");
+    background-image: url("../images/desktop/image-transform.jpg");
     order: 0;
   }
   .cards-box .glass {
-    background-image: url("/images/desktop/image-stand-out.jpg");
+    background-image: url("../images/desktop/image-stand-out.jpg");
   }
   .cards-box .cherry,
   .cards-box .orange {
@@ -204,10 +204,10 @@
     padding-right: var(--32px);
   }
   .cards-box .cherry {
-    background-image: url("/images/desktop/image-graphic-design.jpg");
+    background-image: url("../images/desktop/image-graphic-design.jpg");
   }
   .cards-box .orange {
-    background-image: url("/images/desktop/image-photography.jpg");
+    background-image: url("../images/desktop/image-photography.jpg");
   }
   .testimonials-box {
     padding-top: var(--section-padding);
@@ -532,6 +532,7 @@ a {
 body {
   font-family: "Barlow", sans-serif;
   font-family: "Fraunces", serif;
+  overflow-x: hidden;
 }
 
 button {
@@ -542,7 +543,7 @@ button {
 }
 
 .nav-container {
-  background-image: url("/images/mobile/image-header.jpg");
+  background-image: url("../images/mobile/image-header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -614,7 +615,7 @@ button {
 
 @media (min-width: 48rem) {
   .nav-container {
-    background-image: url("/images/desktop/image-header.jpg");
+    background-image: url("../images/desktop/image-header.jpg");
     height: 750px;
   }
   .nav-container .nav {

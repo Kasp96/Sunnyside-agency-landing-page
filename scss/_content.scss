@@ -11,6 +11,7 @@
 		padding-block: var(--68px);
 		padding-inline: var(--24px);
 		background-position: center;
+		
 
 		.card-heading {
 			font-size: var(--32px);
@@ -37,6 +38,7 @@
 			font-weight: var(--fw-l);
 			line-height: var(--26px);
 		}
+		
 	}
 
 	.bgi {
@@ -45,11 +47,11 @@
 	}
 
 	.egg {
-		background-image: url('/images/mobile/image-transform.jpg');
+		background-image: url('../images/mobile/image-transform.jpg');
 		order: -1;
 	}
 	.glass {
-		background-image: url('/images/mobile/image-stand-out.jpg');
+		background-image: url('../images/mobile/image-stand-out.jpg');
 	}
 	.cherry,
 	.orange {
@@ -59,12 +61,12 @@
 		padding-inline: var(--16px);
 	}
 	.cherry {
-		background-image: url('/images/mobile/image-graphic-design.jpg');
+		background-image: url('../images/mobile/image-graphic-design.jpg');
 		min-height: 600px;
 		color: var(--clr-green-800);
 	}
 	.orange {
-		background-image: url('/images/mobile/image-photography.jpg');
+		background-image: url('../images/mobile/image-photography.jpg');
 		min-height: 600px;
 		color: var(--clr-blue-800);
 	}
@@ -200,11 +202,11 @@
 		}
 
 		.egg {
-			background-image: url('/images/desktop/image-transform.jpg');
+			background-image: url('../images/desktop/image-transform.jpg');
 			order: 0;
 		}
 		.glass {
-			background-image: url('/images/desktop/image-stand-out.jpg');
+			background-image: url('../images/desktop/image-stand-out.jpg');
 		}
 		.cherry,
 		.orange {
@@ -217,10 +219,10 @@
 		}
 
 		.cherry {
-			background-image: url('/images/desktop/image-graphic-design.jpg');
+			background-image: url('../images/desktop/image-graphic-design.jpg');
 		}
 		.orange {
-			background-image: url('/images/desktop/image-photography.jpg');
+			background-image: url('../images/desktop/image-photography.jpg');
 		}
 	}
 	.testimonials-box {
