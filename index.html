@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -32,8 +33,11 @@
 
             </nav>
             <header class="header">
-                <h1>We are creatives</h1>
-                <img class="arrow" src="./images/icon-arrow-down.svg" alt="arrow">
+                <h1 data-aos="fade-left" data-aos-duration="1000">We are creatives</h1>
+                <div class="arrow-container">
+                    <img class="arrow bounce-top" src="./images/icon-arrow-down.svg" alt="arrow">
+                </div>
+
             </header>
         </div>
 
@@ -43,7 +47,7 @@
             <section class="blocks">
                 <div class="cards-box">
 
-                    <div class="card">
+                    <div class="card" data-aos="fade-right">
                         <h2 class="card-heading">Transform your brand</h2>
                         <p class="card-text"> We are a full-service creative agency specializing in helping brands grow
                             fast.
@@ -57,7 +61,7 @@
                     <div class="card bgi glass">
 
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="fade-left">
                         <h2 class="card-heading">Stand out to the right audience</h2>
                         <p class="card-text"> Using a collaborative formula of designers, researchers, photographers,
                             videographers, and
@@ -67,19 +71,26 @@
                         <button class="button-reverse pink">Learn more</button>
                     </div>
                     <div class="card bgi cherry">
-                        <h3 class="card-heading-sm">Graphic Design</h3>
-                        <p class="card-text-sm">Great design makes you memorable. We deliver artwork that underscores
-                            your brand message and captures potential clients' attention.</p>
+                        <div class="cherry-text" data-aos="zoom-in-down">
+                            <h3 class="card-heading-sm">Graphic Design</h3>
+                            <p class="card-text-sm">Great design makes you memorable. We deliver artwork that
+                                underscores
+                                your brand message and captures potential clients' attention.</p>
+                        </div>
+
 
                     </div>
                     <div class="card bgi orange">
-                        <h3 class="card-heading-sm">Photography</h3>
-                        <p class="card-text-sm">Increase your credibility by getting the most stunning, high-quality
-                            photos
-                            that
-                            improve your
-                            business
-                            image.</p>
+                        <div class="orange-text" data-aos="zoom-in-down">
+                            <h3 class="card-heading-sm">Photography</h3>
+                            <p class="card-text-sm">Increase your credibility by getting the most stunning, high-quality
+                                photos
+                                that
+                                improve your
+                                business
+                                image.</p>
+                        </div>
+
                     </div>
                 </div>
             </section>
@@ -88,7 +99,7 @@
                     <h2 class="testimonial-heading">Client testimonials</h2>
 
                     <div class="clients-box">
-                        <div class="client">
+                        <div class="client" data-aos="fade-right" data-aos-duration="600">
                             <img src="./images/image-emily.jpg" alt="user Emily">
                             <p class="quote">We put our trust in Sunnyside and they delivered, making sure our needs
                                 were
@@ -97,7 +108,7 @@
                             <h4 class="quote-author">Emily R.</h4>
                             <h5 class="role">Marketing Director</h5>
                         </div>
-                        <div class="client">
+                        <div class="client" data-aos="fade-down" data-aos-duration="600">
                             <img src="./images/image-thomas.jpg" alt="User Thomas">
                             <p class="quote">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s
                                 success made it a satisfying and enjoyable
@@ -105,7 +116,7 @@
                             <h4 class="quote-author"> Thomas S.</h4>
                             <h5 class="role">Chief Operating Officer</h5>
                         </div>
-                        <div class="client">
+                        <div class="client" data-aos="fade-left" data-aos-duration="600">
                             <img src="./images/image-jennie.jpg" alt="User Jennie">
                             <p class="quote">Incredible end result! Our sales increased over 400% when we worked with
                                 Sunnyside. Highly recommended!</p>
@@ -166,6 +177,8 @@
             </div>
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
     <script type="module" src="script.js"></script>
 </body>
 
